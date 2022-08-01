@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32630.192
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1  - Apps", "1  - Apps", "{D276677D-BBDF-443B-8E92-5A826EC03736}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - FrontEnd", "2 - FrontEnd", "{EF63FCB2-E35F-4A42-9A95-8719D0F06880}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Services", "3 - Services", "{55EBD4B8-26E3-479B-8652-11948A267EA4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4  - Application", "4  - Application", "{9E317794-35AA-47C0-A2A6-604502D0CFF8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5  - Domain", "5  - Domain", "{87A973D8-0DDD-4587-B6E9-49A11DDE7003}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "6 - Infra", "6 - Infra", "{5C14E286-C9FB-4E52-8DE2-9B055F951876}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "6.1 -  Data", "6.1 -  Data", "{E8F5D942-3059-4796-ADB2-BAEE214F2CB3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "6.2 - Utils", "6.2 - Utils", "{81B84449-5A87-4A96-B7BD-AD22BFD0A1D1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoLab.Domain", "AutoLab.Domain\AutoLab.Domain.csproj", "{D2E87D0C-2FE9-4F2B-BD6A-73AE9E4112FA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D2E87D0C-2FE9-4F2B-BD6A-73AE9E4112FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2E87D0C-2FE9-4F2B-BD6A-73AE9E4112FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2E87D0C-2FE9-4F2B-BD6A-73AE9E4112FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2E87D0C-2FE9-4F2B-BD6A-73AE9E4112FA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E8F5D942-3059-4796-ADB2-BAEE214F2CB3} = {5C14E286-C9FB-4E52-8DE2-9B055F951876}
+		{81B84449-5A87-4A96-B7BD-AD22BFD0A1D1} = {5C14E286-C9FB-4E52-8DE2-9B055F951876}
+		{D2E87D0C-2FE9-4F2B-BD6A-73AE9E4112FA} = {87A973D8-0DDD-4587-B6E9-49A11DDE7003}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {70E070A9-2BA6-408D-9F7A-80DF1690F5F0}
+	EndGlobalSection
+EndGlobal
