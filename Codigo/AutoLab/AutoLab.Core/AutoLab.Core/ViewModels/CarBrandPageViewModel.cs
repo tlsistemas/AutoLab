@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AutoLab.Core.Views;
+using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Diagnostics;
@@ -45,10 +46,10 @@ namespace AutoLab.Core.ViewModels
             if (item == null)
                 return;
 
-            var items = await CarModelService.GetCarModel(item.Key);
-
-            // This will push the ItemDetailPage onto the navigation stack
-            //await Shell.Current.GoToAsync($"{nameof(ItemDetailPage)}?{nameof(ItemDetailViewModel.ItemId)}={item.Id}");
+            await Shell.Current.GoToAsync($"{nameof(CarModelPage)}?guid={item.Key}");
+            //await Shell.Current.GoToAsync("CarModelPage?Data=from page2");
+            //await Shell.Current.GoToAsync($"CarModelPage?Brand={item.Key}");
+            //await Shell.Current.GoToAsync($"{nameof(CarModelPage)}");
         }
 
         async Task ExecuteLoadItemsCommand()

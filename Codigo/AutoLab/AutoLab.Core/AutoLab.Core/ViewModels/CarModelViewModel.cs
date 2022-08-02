@@ -10,6 +10,7 @@ namespace AutoLab.Core.ViewModels
     {
         public string Key { get; set; }
         public CarBrandViewModel CarBrand { get; set; }
+        public string CarBrandKey { get; set; }
         public string Model { get; set; }
         public int Year { get; set; }
         public bool Removed { get; set; }

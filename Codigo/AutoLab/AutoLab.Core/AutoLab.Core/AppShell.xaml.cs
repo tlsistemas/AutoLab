@@ -11,6 +11,8 @@ namespace AutoLab.Core
         public AppShell()
         {
             InitializeComponent();
+            Routing.RegisterRoute(nameof(CarBrandPage), typeof(CarBrandPage));
+            Routing.RegisterRoute(nameof(CarModelPage), typeof(CarModelPage));
         }
     }
 }
