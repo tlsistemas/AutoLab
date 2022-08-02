@@ -35,7 +35,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoLab.Core.iOS", "AutoLab
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AutoLab.Core", "AutoLab.Core\AutoLab.Core\AutoLab.Core.csproj", "{A36C9A2A-B20E-4FA3-8680-1DEAB04ACCF2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoLab.Web", "AutoLab.Web\AutoLab.Web.csproj", "{75D21969-05CC-4F12-B055-565E121CB178}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AutoLab.Web", "AutoLab.Web\AutoLab.Web.csproj", "{75D21969-05CC-4F12-B055-565E121CB178}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

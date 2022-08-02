@@ -62,6 +62,29 @@ namespace AutoLab.Application.Application
             return response;
         }
 
+        public async Task<BaseResponse<IEnumerable<CarBrandViewModel>>> ListCarBrandAsync()
+        {
+            var response = new BaseResponse<IEnumerable<CarBrandViewModel>>();
+
+            try
+            {
+
+                var obj = _service.GetAll();
+
+                response.Data = _mapper.Map<IEnumerable<CarBrandViewModel>>(obj);
+            }
+            catch (Exception ex)
+            {
+                response.Data = null;
+                response.AddError(ex.Message);
+                response.AddError(ex.StackTrace);
+                response.Error = true;
+                response.SetStatusCode(HttpStatusCode.InternalServerError);
+            }
+
+            return response;
+        }
+
         public async Task<BaseResponse<CarBrandViewModel>> Create(CarBrandViewModel paranObj)
         {
             var response = new BaseResponse<CarBrandViewModel>();

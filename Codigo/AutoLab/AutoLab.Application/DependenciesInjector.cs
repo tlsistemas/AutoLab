@@ -7,6 +7,8 @@ using AutoLab.Domain.Interfaces.Services;
 using AutoLab.Domain.Services;
 using AutoLab.Utils.Bases;
 using AutoLab.Utils.Bases.Interface;
+using AutoLab.Utils.Http;
+using AutoLab.Utils.Interfaces;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace AutoLab.Application
@@ -16,6 +18,10 @@ namespace AutoLab.Application
         public static void Register(IServiceCollection svcCollection)
         {
             svcCollection.AddAutoMapper(typeof(ModelToViewModel), typeof(ViewModelToModel));
+
+            #region Api
+            svcCollection.AddScoped<IApiService, ApiService>();
+            #endregion
 
             #region Application
             svcCollection.AddScoped<ICarBrandApplication, CarBrandApplication>();

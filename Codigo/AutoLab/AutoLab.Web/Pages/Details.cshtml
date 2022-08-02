@@ -1,0 +1,29 @@
+﻿@page
+@model AutoLab.Web.Pages.DetailsModel
+@{
+    ViewData["Title"] = "Details Brand";
+}
+
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">Brand</th>
+            <th scope="col">Model</th>
+            <th scope="col">Year</th>
+            <th scope="col">Updated</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.Models)
+        {
+            <tr>
+                <td>@item.CarBrand.Brand</td>
+                <td>@item.Model</td>
+                <td>@item.Year</td>
+                <td>@item.Updated</td>
+            </tr>
+
+        }
+
+    </tbody>
+</table>

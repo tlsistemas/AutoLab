@@ -22,7 +22,7 @@ namespace AutoLab.Web.Pages
 
         public async void OnGet()
         {
-            var itens = await _pageApplication.ListCarBrandAsync(new CarBrandParams());
+            var itens = await _pageApplication.ListCarBrandAsync();
             if (!itens.Error)
                 Models = itens.Data;
             else
