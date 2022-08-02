@@ -6,24 +6,7 @@ using AutoLab.Domain.Interfaces.Services;
 using AutoLab.Domain.Services;
 using AutoLab.Utils.Bases;
 using AutoLab.Utils.Bases.Interface;
-using C2P.Application.Application;
-using C2P.Application.Interfaces;
-using C2P.Data.Repositories;
-using C2P.Domain.Interfaces.Repositories;
-using C2P.Domain.Interfaces.Services;
-using C2P.Domain.Services;
-using C2P.FincsData;
-using C2P.FincsData.Interfaces;
-using C2P.Utils.Bases;
-using C2P.Utils.Bases.Interface;
-using C2P.Utils.Cryptography;
-using C2P.Utils.Email;
 using Microsoft.Extensions.DependencyInjection;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace AutoLab.Application
 {
