@@ -15,3 +15,11 @@
 /Codigo/AutoLab/AutoLab.Application/bin/Debug/net6.0
 /Codigo/AutoLab/AutoLab.API/bin/Debug/net6.0
 /Codigo/AutoLab/AutoLab.API/obj
+/Codigo/AutoLab/AutoLab.Core/AutoLab.Core/obj/Debug/netstandard2.0
+/Codigo/AutoLab/AutoLab.Core/AutoLab.Core/obj/Debug/netstandard2.0
+/Codigo/AutoLab/AutoLab.Core/AutoLab.Core/bin/Debug/netstandard2.0
+/Codigo/AutoLab/AutoLab.Core/AutoLab.Core/obj
+/Codigo/AutoLab/AutoLab.Core/AutoLab.Core.Android/bin/Debug
+/Codigo/AutoLab/AutoLab.Core/AutoLab.Core.Android/obj
+/Codigo/AutoLab/AutoLab.Core/AutoLab.Core.iOS/bin/iPhoneSimulator/Debug
+/Codigo/AutoLab/AutoLab.Core/AutoLab.Core.iOS/obj
