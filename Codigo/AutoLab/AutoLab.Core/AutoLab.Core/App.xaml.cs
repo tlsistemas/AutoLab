@@ -1,8 +1,8 @@
 ﻿using AutoLab.Core.Services;
-using AutoLab.Core.Views;
-using System;
+using AutoLab.Core.Services.Interfaces;
+using AutoLab.Services;
+using AutoLab.Services.Interfaces;
 using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
 
 namespace AutoLab.Core
 {
@@ -12,8 +12,7 @@ namespace AutoLab.Core
         public App()
         {
             InitializeComponent();
-
-            DependencyService.Register<MockDataStore>();
+            RegisterServices();
             MainPage = new AppShell();
         }
 
@@ -28,5 +27,13 @@ namespace AutoLab.Core
         protected override void OnResume()
         {
         }
+
+        #region Metodos
+        void RegisterServices()
+        {
+            DependencyService.Register<IApiService, ApiService>();
+            DependencyService.Register<ICarBrandService, CarBrandService>();
+        }
+        #endregion
     }
 }

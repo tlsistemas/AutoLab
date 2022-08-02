@@ -1,5 +1,5 @@
-﻿using AutoLab.Core.Models;
-using AutoLab.Core.Services;
+﻿using AutoLab.Core.Services.Interfaces;
+using AutoLab.Services.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -10,7 +10,7 @@ namespace AutoLab.Core.ViewModels
 {
     public class BaseViewModel : INotifyPropertyChanged
     {
-        public IDataStore<Item> DataStore => DependencyService.Get<IDataStore<Item>>();
+        public ICarBrandService CarBrandService => DependencyService.Get<ICarBrandService>();
 
         bool isBusy = false;
         public bool IsBusy

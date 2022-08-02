@@ -12,9 +12,9 @@ namespace AutoLab.Data.Mappings
         {
             builder.ToTable("CarModel");
 
-            builder.Property(c => c.IdCarBrand)
+            builder.Property(c => c.CarBrandId)
                 .IsRequired()
-                .HasColumnName("IdCarBrand");
+                .HasColumnName("CarBrandId");
 
             builder.Property(c => c.Model)
                 .IsRequired()
@@ -24,6 +24,20 @@ namespace AutoLab.Data.Mappings
             builder.Property(c => c.Year)
                 .IsRequired()
                 .HasColumnName("Year");
+
+            builder.Property(c => c.Removed)
+                .IsRequired()
+                .HasColumnName("Removed")
+                .HasDefaultValue(false);
+
+            builder.Property(c => c.Created)
+                .IsRequired()
+                .HasColumnName("Created")
+                .HasDefaultValue(DateTime.Now);
+
+            builder.Property(c => c.Updated)
+                .HasColumnName("Updated")
+                .HasDefaultValue(DateTime.Now);
 
         }
     }

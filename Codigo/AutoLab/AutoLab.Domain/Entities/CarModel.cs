@@ -9,7 +9,7 @@ namespace AutoLab.Domain.Entities
 {
     public class CarModel:EntityBase
     {
-        public int IdCarBrand { get; set; }
+        public int CarBrandId { get; set; }
         public CarBrand CarBrand { get; set; }
         public string Model { get; set; }
         public int Year { get; set; }

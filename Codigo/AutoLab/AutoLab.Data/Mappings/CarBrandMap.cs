@@ -17,7 +17,21 @@ namespace AutoLab.Data.Mappings
 			builder.Property(c => c.Brand)
 				.IsRequired()
 				.HasColumnName("Brand")
-				.HasMaxLength(150); ;
+				.HasMaxLength(150);
+
+			builder.Property(c => c.Removed)
+				.IsRequired()
+				.HasColumnName("Removed")
+				.HasDefaultValue(false);
+
+			builder.Property(c => c.Created)
+				.IsRequired()
+				.HasColumnName("Created")
+				.HasDefaultValueSql("getdate()");
+
+			builder.Property(c => c.Updated)
+				.HasColumnName("Updated")
+				.HasDefaultValueSql("getdate()");
 
 		}
 	}

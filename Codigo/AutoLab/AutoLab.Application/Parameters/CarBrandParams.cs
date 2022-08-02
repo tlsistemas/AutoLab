@@ -7,8 +7,9 @@ namespace AutoLab.Application.Parameters
 {
     public class CarBrandParams : BaseParams<CarBrand>
     {
-        public string Key { get; set; }
-        public string Brand { get; set; }
+        public string? Key { get; set; }
+        
+        public string? Brand { get; set; }
         public bool Removed { get; set; }
         public DateTime? Created { get; set; }
         public DateTime? Updated { get; set; }

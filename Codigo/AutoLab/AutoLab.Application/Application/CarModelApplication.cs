@@ -80,7 +80,7 @@ namespace AutoLab.Application.Application
                 }
 
                 var carBrand = new CarBrand { Key = paranObj.KeyCarBrand };
-                var existingObj = _service.Get(x => x.IdCarBrand == carBrand.Id && x.Model == paranObj.Model).ToList();
+                var existingObj = _service.Get(x => x.CarBrandId == carBrand.Id && x.Model == paranObj.Model).ToList();
 
                 if (existingObj != null && existingObj.Count > 0)
                 {
@@ -91,7 +91,7 @@ namespace AutoLab.Application.Application
                 var obj = new CarModel
                 {
                     CarBrand = carBrand,
-                    IdCarBrand = carBrand.Id,
+                    CarBrandId = carBrand.Id,
                     Model = paranObj.Model,
                     Year = paranObj.Year
                 };
@@ -138,7 +138,7 @@ namespace AutoLab.Application.Application
                 var carBrand = new CarBrand { Key = paranObj.KeyCarBrand };
 
                 existingObj.CarBrand = carBrand;
-                existingObj.IdCarBrand = carBrand.Id;
+                existingObj.CarBrandId = carBrand.Id;
                 existingObj.Model = paranObj.Model;
                 existingObj.Year = paranObj.Year;
                 existingObj.Updated = DateTime.Now;

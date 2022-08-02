@@ -8,9 +8,9 @@ namespace AutoLab.Application.Parameters
 {
     public class CarModelParams : BaseParams<CarModel>
     {
-        public string Key { get; set; }
-        public string KeyCarBrand { get; set; }
-        public string Model { get; set; }
+        public string? Key { get; set; }
+        public string? KeyCarBrand { get; set; }
+        public string? Model { get; set; }
         public int Year { get; set; }
         public bool Removed { get; set;}
         public DateTime? Created { get; set; }
@@ -32,7 +32,7 @@ namespace AutoLab.Application.Parameters
             if (!string.IsNullOrWhiteSpace(KeyCarBrand))
             {
                 var carBrand = new CarBrand { Key = KeyCarBrand };
-                predicate = predicate.And(p => p.IdCarBrand == carBrand.Id);
+                predicate = predicate.And(p => p.CarBrandId == carBrand.Id);
             }
 
             if (Id.HasValue)

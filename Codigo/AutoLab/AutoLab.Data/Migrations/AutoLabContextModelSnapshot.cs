@@ -37,13 +37,22 @@ namespace AutoLab.Data.Migrations
                         .HasColumnName("Brand");
 
                     b.Property<DateTime>("Created")
-                        .HasColumnType("datetime2");
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("datetime2")
+                        .HasColumnName("Created")
+                        .HasDefaultValueSql("getdate()");
 
                     b.Property<bool>("Removed")
-                        .HasColumnType("bit");
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bit")
+                        .HasDefaultValue(false)
+                        .HasColumnName("Removed");
 
                     b.Property<DateTime>("Updated")
-                        .HasColumnType("datetime2");
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("datetime2")
+                        .HasColumnName("Updated")
+                        .HasDefaultValueSql("getdate()");
 
                     b.HasKey("Id");
 
@@ -59,14 +68,14 @@ namespace AutoLab.Data.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
                     b.Property<int>("CarBrandId")
-                        .HasColumnType("int");
+                        .HasColumnType("int")
+                        .HasColumnName("CarBrandId");
 
                     b.Property<DateTime>("Created")
-                        .HasColumnType("datetime2");
-
-                    b.Property<int>("IdCarBrand")
-                        .HasColumnType("int")
-                        .HasColumnName("IdCarBrand");
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("datetime2")
+                        .HasDefaultValue(new DateTime(2022, 8, 2, 2, 22, 54, 366, DateTimeKind.Local).AddTicks(7590))
+                        .HasColumnName("Created");
 
                     b.Property<string>("Model")
                         .IsRequired()
@@ -75,10 +84,16 @@ namespace AutoLab.Data.Migrations
                         .HasColumnName("Model");
 
                     b.Property<bool>("Removed")
-                        .HasColumnType("bit");
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bit")
+                        .HasDefaultValue(false)
+                        .HasColumnName("Removed");
 
                     b.Property<DateTime>("Updated")
-                        .HasColumnType("datetime2");
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("datetime2")
+                        .HasDefaultValue(new DateTime(2022, 8, 2, 2, 22, 54, 366, DateTimeKind.Local).AddTicks(7755))
+                        .HasColumnName("Updated");
 
                     b.Property<int>("Year")
                         .HasColumnType("int")

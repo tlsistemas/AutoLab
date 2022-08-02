@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace AutoLab.Data.Migrations
 {
-    public partial class autolabInit : Migration
+    public partial class InitialAutoLab : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -16,9 +16,9 @@ namespace AutoLab.Data.Migrations
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Brand = table.Column<string>(type: "nvarchar(150)", maxLength: 150, nullable: false),
-                    Removed = table.Column<bool>(type: "bit", nullable: false),
-                    Created = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    Updated = table.Column<DateTime>(type: "datetime2", nullable: false)
+                    Removed = table.Column<bool>(type: "bit", nullable: false, defaultValue: false),
+                    Created = table.Column<DateTime>(type: "datetime2", nullable: false, defaultValueSql: "getdate()"),
+                    Updated = table.Column<DateTime>(type: "datetime2", nullable: false, defaultValueSql: "getdate()")
                 },
                 constraints: table =>
                 {
@@ -31,13 +31,12 @@ namespace AutoLab.Data.Migrations
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    IdCarBrand = table.Column<int>(type: "int", nullable: false),
                     CarBrandId = table.Column<int>(type: "int", nullable: false),
                     Model = table.Column<string>(type: "nvarchar(150)", maxLength: 150, nullable: false),
                     Year = table.Column<int>(type: "int", nullable: false),
-                    Removed = table.Column<bool>(type: "bit", nullable: false),
-                    Created = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    Updated = table.Column<DateTime>(type: "datetime2", nullable: false)
+                    Removed = table.Column<bool>(type: "bit", nullable: false, defaultValue: false),
+                    Created = table.Column<DateTime>(type: "datetime2", nullable: false, defaultValue: new DateTime(2022, 8, 2, 2, 22, 54, 366, DateTimeKind.Local).AddTicks(7590)),
+                    Updated = table.Column<DateTime>(type: "datetime2", nullable: false, defaultValue: new DateTime(2022, 8, 2, 2, 22, 54, 366, DateTimeKind.Local).AddTicks(7755))
                 },
                 constraints: table =>
                 {

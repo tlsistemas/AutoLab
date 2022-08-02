@@ -7,6 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Folder Include="Mappings\" />
     <Folder Include="Migrations\" />
     <Folder Include="Querys\" />
   </ItemGroup>
