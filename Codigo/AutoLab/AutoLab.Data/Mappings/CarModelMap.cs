@@ -18,7 +18,8 @@ namespace AutoLab.Data.Mappings
 
             builder.Property(c => c.Model)
                 .IsRequired()
-                .HasColumnName("Model");
+                .HasColumnName("Model")
+                .HasMaxLength(150);
 
             builder.Property(c => c.Year)
                 .IsRequired()

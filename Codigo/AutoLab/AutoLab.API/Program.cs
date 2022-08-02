@@ -1,4 +1,5 @@
 using AutoLab.Application;
+using AutoLab.Application.AutoMapper;
 using AutoLab.Data.Contexts;
 using Microsoft.EntityFrameworkCore;
 

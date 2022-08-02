@@ -16,7 +16,8 @@ namespace AutoLab.Data.Mappings
 
 			builder.Property(c => c.Brand)
 				.IsRequired()
-				.HasColumnName("Brand");
+				.HasColumnName("Brand")
+				.HasMaxLength(150); ;
 
 		}
 	}

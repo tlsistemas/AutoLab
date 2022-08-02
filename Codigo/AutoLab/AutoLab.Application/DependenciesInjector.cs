@@ -1,4 +1,5 @@
 ﻿using AutoLab.Application.Application;
+using AutoLab.Application.AutoMapper;
 using AutoLab.Application.Interfaces;
 using AutoLab.Data.Repositories;
 using AutoLab.Domain.Interfaces.Repositories;
@@ -14,6 +15,7 @@ namespace AutoLab.Application
     {
         public static void Register(IServiceCollection svcCollection)
         {
+            svcCollection.AddAutoMapper(typeof(ModelToViewModel), typeof(ViewModelToModel));
 
             #region Application
             svcCollection.AddScoped<ICarBrandApplication, CarBrandApplication>();
