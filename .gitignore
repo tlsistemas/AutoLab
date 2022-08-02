@@ -6,3 +6,8 @@
 /Codigo/AutoLab/.vs/AutoLab/v17
 /Codigo/AutoLab/AutoLab.Domain/bin/Debug/net6.0
 /Codigo/AutoLab/AutoLab.Domain/obj
+/Codigo/AutoLab/.vs
+/Codigo/AutoLab/AutoLab.Data/bin/Debug/net6.0
+/Codigo/AutoLab/AutoLab.Data/obj
+/Codigo/AutoLab/AutoLab.Utils/obj
+/Codigo/AutoLab/AutoLab.Utils/bin/Debug/net6.0

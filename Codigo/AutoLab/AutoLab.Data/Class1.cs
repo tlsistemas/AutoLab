@@ -1,4 +1,4 @@
-﻿namespace AutoLab.Domain
+﻿namespace AutoLab.Data
 {
     public class Class1
     {
