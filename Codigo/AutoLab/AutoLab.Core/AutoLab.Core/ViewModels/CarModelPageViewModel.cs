@@ -22,11 +22,12 @@ namespace AutoLab.Core.ViewModels
             {
                 return new Command(async () =>
                 {
-                    IsBusy = true;
+                    if (BrandKey != null)
+                    {
 
-                    await ExecuteLoadItemsCommand().ConfigureAwait(true);
+                        await ExecuteLoadItemsCommand().ConfigureAwait(true);
 
-                    IsBusy = false;
+                    }
                 });
             }
         }
