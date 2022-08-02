@@ -1,5 +1,6 @@
 ﻿using AutoLab.Core.Services;
 using AutoLab.Core.Services.Interfaces;
+using AutoLab.Core.ViewModels;
 using AutoLab.Services;
 using AutoLab.Services.Interfaces;
 using Xamarin.Forms;

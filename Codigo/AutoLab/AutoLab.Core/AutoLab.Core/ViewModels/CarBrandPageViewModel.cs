@@ -11,7 +11,7 @@ namespace AutoLab.Core.ViewModels
     public class CarBrandPageViewModel : BaseViewModel
     {
         private CarBrandViewModel _selectedItem;
-        public ObservableCollection<CarBrandViewModel> Items { get; }
+        public ObservableCollection<CarBrandViewModel> Items { get; set; }
         public Command<CarBrandViewModel> ItemTapped { get; }
         public Command LoadItemsCommand { get; }
 
@@ -34,7 +34,7 @@ namespace AutoLab.Core.ViewModels
             LoadItemsCommand = new Command(async () => await ExecuteLoadItemsCommand());
         }
 
-        public void OnAppearing()
+        public async void OnAppearing()
         {
             IsBusy = true;
             SelectedItem = null;

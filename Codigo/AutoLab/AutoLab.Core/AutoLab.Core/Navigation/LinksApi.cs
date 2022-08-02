@@ -6,6 +6,6 @@ namespace AutoLab.Core.Navigation
 {
     public static class LinksApi
     {
-        public const string ListCarBrand = "https://localhost:7084/api/CarBrand";
+        public const string ListCarBrand = "http://cpro48756.publiccloud.com.br:8081/api/CarBrand";
     }
 }

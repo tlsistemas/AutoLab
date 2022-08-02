@@ -15,102 +15,7 @@ namespace AutoLab.Services
     public class ApiService : IApiService
     {
         public const string ContentType = "application/json";
-        const long MaxBufferSize = 256000;
-
-        public async Task<BaseResponse<T>> Get<T>(string url)
-        {
-            string json = "";
-            try
-            {
-                var requisicaoWeb = WebRequest.CreateHttp(url);
-                requisicaoWeb.Method = "GET";
-                requisicaoWeb.UserAgent = ".NET Framework Test Client";
-                using (var resposta = requisicaoWeb.GetResponse())
-                {
-                    var streamDados = resposta.GetResponseStream();
-                    StreamReader reader = new StreamReader(streamDados);
-                    object objResponse = reader.ReadToEnd();
-                    json = objResponse.ToString();
-                    streamDados.Close();
-                    resposta.Close();
-                }
-                var res = JsonConvert.DeserializeObject<T>(json);
-                var BaseResponseApi = new BaseResponse<T>();
-                BaseResponseApi.Data = res;
-                return BaseResponseApi;
-            }
-            catch (Exception ex)
-            {
-                Debug.WriteLine(ex.Message);
-                return MsgError<T>(ex.GetType().Name, ex.Message);
-            }
-
-
-        }
-
-        public async Task<string> Get(string url)
-        {
-            string json = "";
-            try
-            {
-                var requisicaoWeb = WebRequest.CreateHttp(url);
-                requisicaoWeb.Method = "GET";
-                requisicaoWeb.UserAgent = ".NET Framework Test Client";
-                using (var resposta = requisicaoWeb.GetResponse())
-                {
-                    var streamDados = resposta.GetResponseStream();
-                    StreamReader reader = new StreamReader(streamDados);
-                    object objResponse = reader.ReadToEnd();
-                    json = objResponse.ToString();
-                    streamDados.Close();
-                    resposta.Close();
-                }
-                return json;
-            }
-            catch (Exception ex)
-            {
-                Debug.WriteLine(ex.Message);
-                return "";
-            }
-
-        }
-
-        public async Task<string> Get(string url, string tokenHash)
-        {
-            string json = "";
-            try
-            {
-                var handler = new HttpClientHandler();
-                var httpClient = new HttpClient(handler);
-                httpClient.DefaultRequestHeaders.Add("User-Agent", ".NET Framework Test Client");
-                var request = new HttpRequestMessage(HttpMethod.Get, url);
-                request.Headers.Add("x-glb-token", tokenHash);
-                var response = httpClient.SendAsync(request).Result;
-
-                Stream streamResponse = response.Content.ReadAsStreamAsync().Result;
-                StreamReader streamRead = new StreamReader(streamResponse);
-                Char[] readBuff = new Char[256];
-                int count = streamRead.Read(readBuff, 0, 256);
-
-
-
-                while (count > 0)
-                {
-                    String outputData = new string(readBuff, 0, count);
-                    json += outputData;
-                    count = streamRead.Read(readBuff, 0, 256);
-                }
-
-                streamRead.DiscardBufferedData();
-                streamResponse.Flush();
-            }
-            catch (Exception ex)
-            {
-                json = "";
-            }
-
-            return json;
-        }
+        const long MaxBufferSize = 256000;       
 
         public async Task<string> GetRestAsync(string url)
         {
@@ -200,16 +105,6 @@ namespace AutoLab.Services
         public BaseResponse<T> MsgError<T>(string code, string message)
         {
             return new BaseResponse<T>(code, message);
-        }
-
-        public string QueryString(IDictionary<string, object> dict)
-        {
-            var list = new List<string>();
-            foreach (var item in dict)
-            {
-                list.Add(item.Key + "=" + item.Value);
-            }
-            return $"?{string.Join("&", list)}";
         }
 
 

@@ -25,7 +25,7 @@ namespace AutoLab.Core.Services
             try
             {
                 var response = new BaseResponse<IEnumerable<CarBrandViewModel>>();
-                string json = await api.Get(LinksApi.ListCarBrand);
+                string json = await api.GetClientAsync(LinksApi.ListCarBrand);
                 response = JsonConvert.DeserializeObject<BaseResponse<IEnumerable<CarBrandViewModel>>>(json);
 
                 if (!response.Error)

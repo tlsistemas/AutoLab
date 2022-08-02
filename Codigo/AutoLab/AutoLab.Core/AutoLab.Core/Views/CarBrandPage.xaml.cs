@@ -16,7 +16,9 @@ namespace AutoLab.Core.Views
         public CarBrandPage()
         {
             InitializeComponent();
-            BindingContext = new CarBrandViewModel();
+            var viewModel = new CarBrandPageViewModel();
+            BindingContext = viewModel;
+            viewModel.OnAppearing();
         }
     }
 }

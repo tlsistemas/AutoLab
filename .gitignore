@@ -23,3 +23,9 @@
 /Codigo/AutoLab/AutoLab.Core/AutoLab.Core.Android/obj
 /Codigo/AutoLab/AutoLab.Core/AutoLab.Core.iOS/bin/iPhoneSimulator/Debug
 /Codigo/AutoLab/AutoLab.Core/AutoLab.Core.iOS/obj
+/Codigo/AutoLab/AutoLab.API/bin/Release/net6.0
+/Codigo/AutoLab/AutoLab.API/Properties/PublishProfiles
+/Codigo/AutoLab/AutoLab.Application/bin/Release/net6.0
+/Codigo/AutoLab/AutoLab.Data/bin/Release/net6.0
+/Codigo/AutoLab/AutoLab.Domain/bin/Release/net6.0
+/Codigo/AutoLab/AutoLab.Utils/bin/Release/net6.0
