@@ -19,21 +19,23 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5.1 -  Data", "5.1 -  Data"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5.2 - Utils", "5.2 - Utils", "{81B84449-5A87-4A96-B7BD-AD22BFD0A1D1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoLab.Domain", "AutoLab.Domain\AutoLab.Domain.csproj", "{D2E87D0C-2FE9-4F2B-BD6A-73AE9E4112FA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AutoLab.Domain", "AutoLab.Domain\AutoLab.Domain.csproj", "{D2E87D0C-2FE9-4F2B-BD6A-73AE9E4112FA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoLab.Data", "AutoLab.Data\AutoLab.Data.csproj", "{2BA3008E-1A0C-4182-82B9-8EC944D44906}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AutoLab.Data", "AutoLab.Data\AutoLab.Data.csproj", "{2BA3008E-1A0C-4182-82B9-8EC944D44906}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoLab.Utils", "AutoLab.Utils\AutoLab.Utils.csproj", "{417C3693-323A-4802-B1A4-2E7993EB28BD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AutoLab.Utils", "AutoLab.Utils\AutoLab.Utils.csproj", "{417C3693-323A-4802-B1A4-2E7993EB28BD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoLab.Application", "AutoLab.Application\AutoLab.Application.csproj", "{D602BA9D-8BA5-4827-9199-118C056F4973}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AutoLab.Application", "AutoLab.Application\AutoLab.Application.csproj", "{D602BA9D-8BA5-4827-9199-118C056F4973}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoLab.API", "AutoLab.API\AutoLab.API.csproj", "{24F3B9D0-293D-4CCB-98A8-65A1CEB32AF4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AutoLab.API", "AutoLab.API\AutoLab.API.csproj", "{24F3B9D0-293D-4CCB-98A8-65A1CEB32AF4}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoLab.Core.Android", "AutoLab.Core\AutoLab.Core.Android\AutoLab.Core.Android.csproj", "{F7AA4E79-787C-4FEF-A1B1-7271380CBE4D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoLab.Core.iOS", "AutoLab.Core\AutoLab.Core.iOS\AutoLab.Core.iOS.csproj", "{FBDC33BE-3704-4296-94EF-C467650C2F20}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoLab.Core", "AutoLab.Core\AutoLab.Core\AutoLab.Core.csproj", "{A36C9A2A-B20E-4FA3-8680-1DEAB04ACCF2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AutoLab.Core", "AutoLab.Core\AutoLab.Core\AutoLab.Core.csproj", "{A36C9A2A-B20E-4FA3-8680-1DEAB04ACCF2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoLab.Web", "AutoLab.Web\AutoLab.Web.csproj", "{75D21969-05CC-4F12-B055-565E121CB178}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -147,6 +149,18 @@ Global
 		{A36C9A2A-B20E-4FA3-8680-1DEAB04ACCF2}.Release|iPhone.Build.0 = Release|Any CPU
 		{A36C9A2A-B20E-4FA3-8680-1DEAB04ACCF2}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
 		{A36C9A2A-B20E-4FA3-8680-1DEAB04ACCF2}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
+		{75D21969-05CC-4F12-B055-565E121CB178}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75D21969-05CC-4F12-B055-565E121CB178}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75D21969-05CC-4F12-B055-565E121CB178}.Debug|iPhone.ActiveCfg = Debug|Any CPU
+		{75D21969-05CC-4F12-B055-565E121CB178}.Debug|iPhone.Build.0 = Debug|Any CPU
+		{75D21969-05CC-4F12-B055-565E121CB178}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{75D21969-05CC-4F12-B055-565E121CB178}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{75D21969-05CC-4F12-B055-565E121CB178}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75D21969-05CC-4F12-B055-565E121CB178}.Release|Any CPU.Build.0 = Release|Any CPU
+		{75D21969-05CC-4F12-B055-565E121CB178}.Release|iPhone.ActiveCfg = Release|Any CPU
+		{75D21969-05CC-4F12-B055-565E121CB178}.Release|iPhone.Build.0 = Release|Any CPU
+		{75D21969-05CC-4F12-B055-565E121CB178}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{75D21969-05CC-4F12-B055-565E121CB178}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -162,6 +176,7 @@ Global
 		{F7AA4E79-787C-4FEF-A1B1-7271380CBE4D} = {D276677D-BBDF-443B-8E92-5A826EC03736}
 		{FBDC33BE-3704-4296-94EF-C467650C2F20} = {D276677D-BBDF-443B-8E92-5A826EC03736}
 		{A36C9A2A-B20E-4FA3-8680-1DEAB04ACCF2} = {D276677D-BBDF-443B-8E92-5A826EC03736}
+		{75D21969-05CC-4F12-B055-565E121CB178} = {EF63FCB2-E35F-4A42-9A95-8719D0F06880}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {70E070A9-2BA6-408D-9F7A-80DF1690F5F0}
