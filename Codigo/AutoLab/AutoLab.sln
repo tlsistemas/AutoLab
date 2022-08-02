@@ -27,6 +27,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoLab.Utils", "AutoLab.Ut
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoLab.Application", "AutoLab.Application\AutoLab.Application.csproj", "{D602BA9D-8BA5-4827-9199-118C056F4973}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoLab.API", "AutoLab.API\AutoLab.API.csproj", "{24F3B9D0-293D-4CCB-98A8-65A1CEB32AF4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -49,6 +51,10 @@ Global
 		{D602BA9D-8BA5-4827-9199-118C056F4973}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D602BA9D-8BA5-4827-9199-118C056F4973}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D602BA9D-8BA5-4827-9199-118C056F4973}.Release|Any CPU.Build.0 = Release|Any CPU
+		{24F3B9D0-293D-4CCB-98A8-65A1CEB32AF4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24F3B9D0-293D-4CCB-98A8-65A1CEB32AF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24F3B9D0-293D-4CCB-98A8-65A1CEB32AF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24F3B9D0-293D-4CCB-98A8-65A1CEB32AF4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -60,6 +66,7 @@ Global
 		{2BA3008E-1A0C-4182-82B9-8EC944D44906} = {E8F5D942-3059-4796-ADB2-BAEE214F2CB3}
 		{417C3693-323A-4802-B1A4-2E7993EB28BD} = {81B84449-5A87-4A96-B7BD-AD22BFD0A1D1}
 		{D602BA9D-8BA5-4827-9199-118C056F4973} = {9E317794-35AA-47C0-A2A6-604502D0CFF8}
+		{24F3B9D0-293D-4CCB-98A8-65A1CEB32AF4} = {55EBD4B8-26E3-479B-8652-11948A267EA4}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {70E070A9-2BA6-408D-9F7A-80DF1690F5F0}

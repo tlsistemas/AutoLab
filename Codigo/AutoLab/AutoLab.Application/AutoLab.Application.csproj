@@ -12,6 +12,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\AutoLab.Data\AutoLab.Data.csproj" />
     <ProjectReference Include="..\AutoLab.Domain\AutoLab.Domain.csproj" />
   </ItemGroup>
 
