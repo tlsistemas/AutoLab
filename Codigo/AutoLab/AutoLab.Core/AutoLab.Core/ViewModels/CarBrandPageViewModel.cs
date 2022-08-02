@@ -45,6 +45,8 @@ namespace AutoLab.Core.ViewModels
             if (item == null)
                 return;
 
+            var items = await CarModelService.GetCarModel(item.Key);
+
             // This will push the ItemDetailPage onto the navigation stack
             //await Shell.Current.GoToAsync($"{nameof(ItemDetailPage)}?{nameof(ItemDetailViewModel.ItemId)}={item.Id}");
         }

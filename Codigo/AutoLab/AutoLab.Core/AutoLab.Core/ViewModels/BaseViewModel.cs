@@ -11,6 +11,7 @@ namespace AutoLab.Core.ViewModels
     public class BaseViewModel : INotifyPropertyChanged
     {
         public ICarBrandService CarBrandService => DependencyService.Get<ICarBrandService>();
+        public ICarModelService CarModelService => DependencyService.Get<ICarModelService>();
 
         bool isBusy = false;
         public bool IsBusy

@@ -34,6 +34,7 @@ namespace AutoLab.Core
         {
             DependencyService.Register<IApiService, ApiService>();
             DependencyService.Register<ICarBrandService, CarBrandService>();
+            DependencyService.Register<ICarModelService, CarModelService>();
         }
         #endregion
     }
