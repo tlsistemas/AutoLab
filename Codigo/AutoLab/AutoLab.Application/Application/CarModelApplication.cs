@@ -68,9 +68,9 @@ namespace AutoLab.Application.Application
 
             try
             {
-                if (paranObj.KeyCarBrand is null)
+                if (paranObj.CarBrandKey is null)
                 {
-                    response.AddErrors(string.Format(Events.CREATE_PARTICIPANT_ERROR.Message, paranObj.KeyCarBrand));
+                    response.AddErrors(string.Format(Events.CREATE_PARTICIPANT_ERROR.Message, paranObj.CarBrandKey));
                     return response;
                 }
                 if (paranObj.Model is null)
@@ -79,7 +79,7 @@ namespace AutoLab.Application.Application
                     return response;
                 }
 
-                var carBrand = new CarBrand { Key = paranObj.KeyCarBrand };
+                var carBrand = new CarBrand { Key = paranObj.CarBrandKey };
                 var existingObj = _service.Get(x => x.CarBrandId == carBrand.Id && x.Model == paranObj.Model).ToList();
 
                 if (existingObj != null && existingObj.Count > 0)
@@ -117,9 +117,9 @@ namespace AutoLab.Application.Application
 
             try
             {
-                if (paranObj.KeyCarBrand is null)
+                if (paranObj.CarBrandKey is null)
                 {
-                    response.AddErrors(string.Format(Events.CREATE_PARTICIPANT_ERROR.Message, paranObj.KeyCarBrand));
+                    response.AddErrors(string.Format(Events.CREATE_PARTICIPANT_ERROR.Message, paranObj.CarBrandKey));
                     return response;
                 }
                 if (paranObj.Model is null)
@@ -135,7 +135,7 @@ namespace AutoLab.Application.Application
                     return response;
                 }
 
-                var carBrand = new CarBrand { Key = paranObj.KeyCarBrand };
+                var carBrand = new CarBrand { Key = paranObj.CarBrandKey };
 
                 existingObj.CarBrand = carBrand;
                 existingObj.CarBrandId = carBrand.Id;
