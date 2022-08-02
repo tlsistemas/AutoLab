@@ -29,7 +29,7 @@ namespace AutoLab.Core.ViewModels
 
         public CarBrandPageViewModel()
         {
-            Title = "Modelos";
+            Title = "Brands";
             Items = new ObservableCollection<CarBrandViewModel>();
             ItemTapped = new Command<CarBrandViewModel>(OnItemSelected);
             LoadItemsCommand = new Command(async () => await ExecuteLoadItemsCommand());

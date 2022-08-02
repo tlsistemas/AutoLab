@@ -22,7 +22,11 @@ namespace AutoLab.Core.ViewModels
             {
                 return new Command(async () =>
                 {
+                    IsBusy = true;
+
                     await ExecuteLoadItemsCommand().ConfigureAwait(true);
+
+                    IsBusy = false;
                 });
             }
         }
@@ -40,7 +44,7 @@ namespace AutoLab.Core.ViewModels
 
         public CarModelPageViewModel()
         {
-            Title = "Modelos";
+            Title = "Models";
             Items = new ObservableCollection<CarModelViewModel>();
         }
 
