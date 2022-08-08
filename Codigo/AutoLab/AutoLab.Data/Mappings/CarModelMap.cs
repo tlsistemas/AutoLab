@@ -33,11 +33,11 @@ namespace AutoLab.Data.Mappings
             builder.Property(c => c.Created)
                 .IsRequired()
                 .HasColumnName("Created")
-                .HasDefaultValue(DateTime.Now);
+                .HasDefaultValueSql("getdate()");
 
             builder.Property(c => c.Updated)
                 .HasColumnName("Updated")
-                .HasDefaultValue(DateTime.Now);
+                .HasDefaultValueSql("getdate()");
 
         }
     }
